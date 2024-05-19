@@ -9,6 +9,8 @@ import Contact from "./Components/Contact";
 import Privacy from "./Components/Privacy";
 import home_back from './assets/home_back.png'
 import SignUp from "./Components/SignUp";
+import {Provider} from "react-redux";
+import store from "./Components/Store";
 const App = () => {
     return (
       <BrowserRouter>
@@ -22,7 +24,9 @@ const App = () => {
                     path={"/home/*"}
                     element={
                     <ProtectedRoute>
-                        <Home/>
+                        <Provider store={store}>
+                            <Home/>
+                        </Provider>
                     </ProtectedRoute>
                     }
                 />
