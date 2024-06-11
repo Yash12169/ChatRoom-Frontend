@@ -1767,6 +1767,9 @@ footer{
 .content-mobile{
     display: none;
 }
+.home-mobile-small{
+    display: none;
+}
 @media (min-width: 320px) and (max-width:480px){
     .nav-box{
         /*background-color: green;*/
