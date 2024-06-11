@@ -1770,6 +1770,18 @@ footer{
 .home-mobile-small{
     display: none;
 }
+.listfriends-mob{
+    display: none;
+}
+.listfriends-mobile{
+    display: none;
+}
+.openMessager-mob{
+    display: none;
+}
+.listfriends-smaller{
+    display: none;
+}
 @media (min-width: 320px) and (max-width:480px){
     .nav-box{
         /*background-color: green;*/
@@ -2225,10 +2237,82 @@ footer{
         margin-bottom: 15px;
         text-align: center;
     }
+    .listfriends-big{
+        display: none;
+    }
+    .listfriends-mob{
+        display: block;
+    }
+    .parent-home{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .openMessager-mob{
 
 
+            display: flex;
+            background:url("./assets/messager_background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            background-color: #9747FF;
+            overflow: hidden;
+            overflow-y: auto;
+    }
+    .listfriends{
+        /*display: none;*/
+    }
+    .listfriends-big{
+        display: none;
+    }
+    .friend-nav{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        align-items: center;
+        padding-right: 20px;
+        height:60px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+        background-color: white;
+        position: fixed;
+        width: 100%;
 
+        /*background-color: palegreen;*/
+    }
+    .message-body{
+        display: flex;
+        flex-direction: column;
+        /*background-color: blue;*/
+        width: 100%;
+    }
+    .messagebar{
 
+        background-color: rgb(241, 234, 234);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 100%;
+        margin-top: 872px;
+        position: fixed;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .openMessager,.openMessagerSmall{
+        display: none;
+    }
+    .listfriends-mob{
+        display: block;
+    }
+    .listfriends {
+        display: none;
+    }
+    .listfriends-smaller{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
 
 
 
